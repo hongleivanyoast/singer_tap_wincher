@@ -1,0 +1,4 @@
+singer-python
+requests
+httpx
+httpx[http2]

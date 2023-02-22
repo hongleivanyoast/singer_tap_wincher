@@ -1,0 +1,154 @@
+{
+	"selected": true,
+    "type": ["null", "object"],
+    "additionalProperties": false,
+    "properties": {
+		"start_date": {
+			"type": "string", 
+			"format": "date"
+		}, 
+      	"refunds":{
+			"type": ["null","array"],
+			"additionalProperties": false,
+			"Items": {
+				"type":["null","object"],
+				"additionalProperties": false,
+				"properties": {
+					"transaction":{
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"subscription_interval":{
+								"type":["null","string"]
+							},
+							"country_code":{
+								"type": ["null","string"]
+							},	
+							"processing_fee": {
+								"type":["null","number"]
+							},
+							"discount":{
+								"type": ["null","number"]
+							},
+							"account_id":{
+								"type":["null","number"]
+							},
+							"payment_method":{
+								"type":["null","string"]
+							},
+							"invoice_num":{
+								"type":["null","number"]
+							},
+							"currency":{
+								"type":["null","string"]
+							},
+							"gross_revenue":{
+								"type":["null","number"]
+							},
+							"paid_date":{
+								"type":"string",
+								"format":"date"
+							}	
+						}
+					},
+					"refunded_commission":{
+						"type":["null","number"]
+					},
+						"refunded_months":{
+						"type":["null","number"]
+					},
+					"refunded_date":{
+						"type":["null","string"],
+						"format": "date"
+					}
+				}
+			}
+		},
+		"commissions": {
+			"type": ["null","array"],
+			"additionalProperties": false,
+			"items": {
+				"type": ["null","object"],
+				"additionalProperties": false,
+				"properties":{
+					"transaction":{
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"subscription_interval":{
+								"type":["null","string"]
+							},
+							"country_code":{
+								"type": ["null","string"]
+							},
+							"processing_fee": {
+								"type":["null","number"]
+							},
+							"discount":{
+								"type": ["null","number"]
+							},
+							"account_id":{
+								"type":["null","number"]
+							},
+							"payment_method":{
+								"type":["null","string"]
+							},
+							"invoice_num":{
+								"type":["null","number"]
+							},
+							"currency":{
+								"type":["null","string"]
+							},
+							"gross_revenue":{
+								"type":["null","number"]
+							},
+							"paid_date":{
+								"type":["null","string"],
+								"format":"date"
+							}
+						}
+					},
+					"months":{
+						"type":["null","number"]
+					},
+					"period_commission":{
+						"type":["null","number"]
+					},
+					"current_month":{
+						"type":["null","number"]
+					},
+					"period_processing_fee":{
+						"type":["null","number"]
+					},
+					"period_revenue":{
+						"type":["null","number"]
+					}
+				}
+			}
+		},
+		"summary_per_currency":{
+			"type":["null","array"],
+			"additionalProperties": false,
+			"items": {
+				"invoiceable_commission":{
+					"type":["null","number"]
+				},
+				"period_revenue":{
+					"type":["null","number"]
+				},
+				"refunded_commission":{
+					"type":["null","number"]
+				},
+				"period_commission":{
+					"type":["null","number"]
+				},
+				"period_processing_fee":{
+					"type":["null","number"]
+				},
+				"currency":{
+					"type":["null","string"]
+				}
+			}
+		}
+    }
+}
