@@ -250,7 +250,7 @@ def date_parser(input_date: str) -> str:
 STREAMS: MappingProxyType = MappingProxyType({
     "wincher": {
         'key_properties': 'start_date',
-        'replication_method': 'incremental',
+        'replication_method': 'INCREMENTAL',
         'replication_key': 'start_date',
         'bookmark':'start_date',
         'mapping': {
